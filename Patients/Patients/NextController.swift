@@ -8,7 +8,12 @@
 import UIKit
 
 class NextController: UIViewController {
-
+    var patientsArray = [Patient]()
+    
+    
+    @IBOutlet weak var nameArea: UITextField!
+    @IBOutlet weak var ageArea: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Cabinet"
@@ -25,6 +30,21 @@ class NextController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func addAction(_ sender: UIButton) {
+        let patient = Patient(patientName: nameArea.text!, patientAge: Int(ageArea.text!)!)
+        patientsArray.append(patient)
+        
+        nameArea.text = ""
+        ageArea.text = ""
+    }
     
 
+}
+struct Patient{
+    let name: String
+    let age: Int
+    init (patientName: String, patientAge: Int){
+        name = patientName
+        age = patientAge
+    }
 }
