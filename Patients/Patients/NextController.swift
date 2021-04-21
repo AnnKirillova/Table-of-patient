@@ -11,7 +11,7 @@ class NextController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Cabinet"
         // Do any additional setup after loading the view.
     }
     
@@ -25,5 +25,6 @@ class NextController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
