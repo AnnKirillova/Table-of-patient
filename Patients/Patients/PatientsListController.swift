@@ -1,5 +1,5 @@
 //
-//  NextController.swift
+//  PatientsListController.swift
 //  Patients
 //
 //  Created by Ann on 21.04.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NextController: UIViewController {
+class PatientsListController: UIViewController {
     var patientsArray = [Patient]()
     
     
